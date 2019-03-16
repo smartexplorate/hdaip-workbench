@@ -1,0 +1,36 @@
+<header class="header-6">
+  <div class="branding">
+      <a routerLink="" class="nav-link">
+          <clr-icon shape="dashboard"></clr-icon>
+          <span class="title">HDaIP</span>
+      </a>
+  </div>
+  <div class="header-nav">
+      <a routerLink="" class="nav-link nav-icon">
+          <clr-icon shape="cloud"></clr-icon>
+      </a>
+      <a routerLink="" class="active nav-link nav-icon">
+          <clr-icon shape="folder"></clr-icon>
+      </a>
+  </div>
+  <form class="search">
+      <label for="search_input">
+          <input id="search_input" type="text" placeholder="Search for keywords...">
+      </label>
+  </form>
+  <div class="header-actions">
+      <clr-dropdown>
+          <button class="nav-icon" clrDropdownTrigger>
+              <clr-icon shape="user"></clr-icon>
+              <clr-icon shape="caret down"></clr-icon>
+          </button>
+          <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+<!--               <a routerLink="./about" clrDropdownItem>About</a>
+              <a routerLink=".settings" clrDropdownItem>Settings</a> -->
+              <a href="./about" clrDropdownItem>About</a>
+              <a href=".settings" clrDropdownItem>Settings</a>
+              <a href="./login" clrDropdownItem>Log out</a>
+          </clr-dropdown-menu>
+      </clr-dropdown>
+  </div>
+</header>
